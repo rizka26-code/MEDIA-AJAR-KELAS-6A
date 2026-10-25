@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>IPAS Kelas VI — Bagaimana Tubuh Kita Bergerak?</title>
+<style>
+:root{--navy:#183153;--blue:#3778c2;--sky:#eaf5ff;--teal:#20a99a;--yellow:#ffd166;--pink:#ff8fab;--ink:#263449;--muted:#65748b;--paper:#fff;--line:#dce7f2}
+*{box-sizing:border-box}body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",sans-serif;color:var(--ink);background:linear-gradient(135deg,#e9f7ff,#f8f1ff 52%,#fff6df);min-height:100vh}
+header{background:linear-gradient(120deg,#17345c,#3778c2);color:white;padding:22px 18px 28px;border-radius:0 0 28px 28px}
+.wrap{max-width:1050px;margin:auto} .eyebrow{font-size:.8rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase;opacity:.85}
+h1{font-size:clamp(1.65rem,4vw,2.5rem);line-height:1.1;margin:8px 0}header p{margin:8px 0 0;max-width:760px;color:#eaf4ff}
+.pills{display:flex;flex-wrap:wrap;gap:8px;margin-top:15px}.pill{background:#ffffff22;border:1px solid #ffffff50;border-radius:999px;padding:6px 11px;font-size:.84rem}
+main{max-width:1050px;margin:18px auto;padding:0 14px 35px}.nav{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 16px}.nav button,.controls button,.action{border:0;border-radius:12px;padding:11px 14px;font-weight:750;cursor:pointer;transition:.15s;font-size:.95rem}.nav button{background:white;color:var(--navy);box-shadow:0 3px 12px #18315312}.nav button.active{background:var(--blue);color:white}.nav button:hover,.controls button:hover,.action:hover{transform:translateY(-1px);filter:brightness(.98)}
+.panel{background:#ffffffeb;border:1px solid #ffffff;border-radius:22px;padding:clamp(16px,3vw,28px);box-shadow:0 12px 34px #18315312;margin-bottom:14px}
+h2{margin:0 0 10px;color:var(--navy)}h3{color:var(--navy);margin:10px 0 6px}p{line-height:1.6}.muted{color:var(--muted)}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}.tile{background:var(--sky);border:1px solid #d4e8fa;border-radius:17px;padding:16px}.tile .emoji{font-size:2rem}.tile p{margin:6px 0 0}.callout{border-left:5px solid var(--teal);background:#e9fbf7;padding:13px 15px;border-radius:10px;margin:14px 0}.warning{border-left-color:#f1b944;background:#fff7df}
+.controls{display:flex;flex-wrap:wrap;gap:8px;justify-content:space-between;margin:14px 0}.controls .left,.controls .right{display:flex;flex-wrap:wrap;gap:8px}.controls button{background:#e7effa;color:var(--navy)}.controls .primary,.action{background:var(--blue);color:white}.action.secondary{background:#e7effa;color:var(--navy)}.action.good{background:var(--teal);color:white}
+.question{border:1px solid var(--line);border-radius:16px;padding:15px;margin:12px 0;background:white}.question legend,.qtitle{font-weight:800;color:var(--navy)}.options{display:grid;gap:8px;margin-top:10px}.options label{padding:10px 12px;border:1px solid var(--line);border-radius:11px;cursor:pointer}.options label:hover{background:#f4f9ff}.options input{margin-right:8px}.feedback{font-size:.92rem;margin-top:9px;font-weight:650}.correct{color:#087f5b}.incorrect{color:#b54708}.score{font-size:1.15rem;font-weight:850;background:#e9fbf7;border-radius:14px;padding:13px;margin:12px 0}
+select,input[type=text],textarea{width:100%;padding:11px;border:1px solid #cbd9e8;border-radius:10px;font:inherit;background:white}textarea{min-height:100px;resize:vertical}.matchrow{display:grid;grid-template-columns:1fr 1.2fr;gap:10px;align-items:center;margin:9px 0}.matchrow .term{font-weight:750;background:#f0f6ff;padding:12px;border-radius:10px}.sortlist{display:grid;gap:8px}.sortitem{padding:12px;background:#f0f6ff;border:1px solid #cbdff5;border-radius:10px;cursor:grab;font-weight:700}.sortitem:focus{outline:3px solid #9ac5ff}.sortitem.dragging{opacity:.45}.small{font-size:.88rem}.hidden{display:none!important}.toast{position:fixed;bottom:18px;left:50%;transform:translateX(-50%);background:#183153;color:white;padding:12px 18px;border-radius:999px;box-shadow:0 6px 25px #0002;z-index:20;display:none}.toast.show{display:block;animation:fade 2.2s forwards}@keyframes fade{0%,70%{opacity:1}100%{opacity:0}}footer{text-align:center;color:var(--muted);padding:10px;font-size:.86rem}
+@media(max-width:560px){.matchrow{grid-template-columns:1fr}.nav button{flex:1 1 42%}.controls{gap:12px}.controls .left,.controls .right{width:100%}.controls button{flex:1}}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+<div class="eyebrow">Media Pembelajaran Digital Interaktif • IPAS SD</div>
+<h1>🦴 Bagaimana Tubuh Kita Bergerak?</h1>
+<p>Kelas VI • Bab 1 — Jelajahi tulang, sendi, otot, dan sistem saraf melalui materi, aktivitas, kuis, serta refleksi.</p>
+<div class="pills"><span class="pill">📚 Materi eksplorasi</span><span class="pill">🧩 Aktivitas interaktif</span><span class="pill">🎯 Kuis dengan skor otomatis</span><span class="pill">💭 Refleksi diri</span></div>
+</div></header>
+<main>
+<nav class="nav" aria-label="Menu utama">
+<button class="active" data-page="materi">🏠 Materi Eksplorasi</button><button data-page="latihan">🧩 Latihan</button><button data-page="kuis">🎯 Kuis</button><button data-page="refleksi">💭 Refleksi</button>
+</nav>
+<section id="materi" class="page">
+<div class="panel">
+<h2>🌟 Tujuan Pembelajaran</h2>
+<p>Setelah belajar, kamu diharapkan mampu mengidentifikasi tulang, sendi, dan otot; menjelaskan kerja sama organ gerak dengan sistem saraf; serta memilih kebiasaan untuk menjaga kesehatan sistem gerak.</p>
+<div class="grid">
+<div class="tile"><div class="emoji">🦴</div><h3>1. Tulang</h3><p>Tulang menopang dan memberi bentuk tubuh, melindungi organ, serta menjadi alat gerak pasif karena bergerak dengan bantuan otot.</p><p><b>Contoh:</b> tengkorak, tulang belakang, tulang rusuk, tulang lengan, tulang paha, tulang kering, dan tulang jari.</p></div>
+<div class="tile"><div class="emoji">🦿</div><h3>2. Sendi</h3><p>Sendi menghubungkan tulang dan memungkinkan gerakan.</p><p><b>Engsel:</b> siku/lutut. <b>Peluru:</b> bahu/panggul. <b>Putar:</b> antara atlas dan axis di leher. <b>Pelana:</b> pangkal ibu jari. <b>Geser:</b> beberapa tulang pergelangan.</p></div>
+<div class="tile"><div class="emoji">💪</div><h3>3. Otot</h3><p>Otot adalah alat gerak aktif. Otot rangka/lurik membantu gerakan sadar, otot polos bekerja pada organ dalam, dan otot jantung memompa darah.</p><p>Otot bekerja melalui <b>kontraksi</b> (menegang/memendek) dan <b>relaksasi</b> (mengendur).</p></div>
+<div class="tile"><div class="emoji">🧠</div><h3>4. Sistem saraf</h3><p>Otak, sumsum tulang belakang, dan saraf tepi menerima serta mengirim pesan agar tubuh dapat merespons.</p><p><b>Gerak sadar:</b> mengambil pensil. <b>Gerak refleks:</b> menarik tangan dengan cepat dari benda panas.</p></div>
+</div>
+<div class="callout"><b>🔗 Bagaimana tubuh bergerak?</b><br>Otak/sistem saraf mengirim pesan → otot berkontraksi atau relaksasi → otot menarik tulang → sendi memungkinkan tulang bergerak.</div>
+<div class="callout warning"><b>🛡️ Jaga sistem gerak:</b> makan bergizi (termasuk sumber kalsium dan vitamin D), aktif bergerak, pemanasan sebelum olahraga, menjaga postur, membawa tas dengan benar, dan beristirahat cukup.</div>
+</div>
+<div class="panel"><h2>🔎 Coba amati tubuhmu</h2><p>Tekuk dan luruskan siku secara perlahan. Rasakan otot lengan berubah tegang dan kendur. Gerakkan dengan lembut dan hentikan jika terasa sakit.</p><button class="action" onclick="copyText('Tubuh bergerak karena kerja sama sistem saraf, otot, tulang, dan sendi. Tulang menopang tubuh, sendi menghubungkan tulang, otot menarik tulang, dan sistem saraf mengendalikan gerak.')">📋 Salin rangkuman materi</button></div>
+</section>
+<section id="latihan" class="page hidden">
+<div class="panel"><h2>🧩 Latihan 1 — Cocokkan bagian dan fungsi</h2><p class="muted">Pilih fungsi yang paling tepat untuk setiap istilah.</p>
+<div id="matching"></div><button class="action" onclick="checkMatching()">Periksa jawaban</button><div id="matchFeedback" class="feedback" aria-live="polite"></div></div>
+<div class="panel"><h2>↕️ Latihan 2 — Urutkan proses gerak</h2><p>Susun langkah berikut dari awal sampai gerakan terjadi. Seret kartu, atau gunakan tombol panah pada tiap kartu.</p>
+<div id="sortlist" class="sortlist">
+<div class="sortitem" draggable="true" tabindex="0" data-order="3">Otot menarik tulang sehingga terjadi gerakan.</div>
+<div class="sortitem" draggable="true" tabindex="0" data-order="1">Sistem saraf mengirim pesan kepada otot.</div>
+<div class="sortitem" draggable="true" tabindex="0" data-order="4">Sendi memungkinkan tulang bergerak.</div>
+<div class="sortitem" draggable="true" tabindex="0" data-order="2">Otot menerima pesan lalu berkontraksi atau relaksasi.</div>
+</div><div class="controls"><div class="left"><button onclick="moveSort(-1)">⬆️ Naikkan pilihan</button><button onclick="moveSort(1)">⬇️ Turunkan pilihan</button></div><div class="right"><button class="primary" onclick="checkSort()">Periksa urutan</button><button onclick="resetSort()">Ulangi</button></div></div><div id="sortFeedback" class="feedback" aria-live="polite"></div><p class="small muted">Petunjuk aksesibilitas: klik satu kartu lalu gunakan tombol naik/turun untuk memindahkannya.</p></div>
+</section>
+<section id="kuis" class="page hidden">
+<div class="panel"><h2>🎯 Kuis Interaktif</h2><p>Pilih satu jawaban untuk setiap soal. Tekan <b>Periksa Kuis</b> untuk melihat skor, kunci jawaban, dan pembahasan.</p>
+<form id="quizForm">
+<div class="question"><div class="qtitle">1. Apa fungsi utama tulang rusuk?</div><div class="options"><label><input type="radio" name="q1" value="a"> Menghasilkan pikiran</label><label><input type="radio" name="q1" value="b"> Melindungi organ di rongga dada</label><label><input type="radio" name="q1" value="c"> Memompa darah</label></div><div id="fb1" class="feedback"></div></div>
+<div class="question"><div class="qtitle">2. Sendi yang memungkinkan gerak seperti membuka dan menutup pintu terdapat pada ...</div><div class="options"><label><input type="radio" name="q2" value="a"> Siku</label><label><input type="radio" name="q2" value="b"> Bahu</label><label><input type="radio" name="q2" value="c"> Pangkal ibu jari</label></div><div id="fb2" class="feedback"></div></div>
+<div class="question"><div class="qtitle">3. Jenis otot yang bekerja memompa darah adalah ...</div><div class="options"><label><input type="radio" name="q3" value="a"> Otot polos</label><label><input type="radio" name="q3" value="b"> Otot rangka</label><label><input type="radio" name="q3" value="c"> Otot jantung</label></div><div id="fb3" class="feedback"></div></div>
+<div class="question"><div class="qtitle">4. Alat gerak aktif yang menarik tulang adalah ...</div><div class="options"><label><input type="radio" name="q4" value="a"> Otot</label><label><input type="radio" name="q4" value="b"> Tulang</label><label><input type="radio" name="q4" value="c"> Kulit</label></div><div id="fb4" class="feedback"></div></div>
+<div class="question"><div class="qtitle">5. Otak dan sumsum tulang belakang termasuk bagian ...</div><div class="options"><label><input type="radio" name="q5" value="a"> Sistem pencernaan</label><label><input type="radio" name="q5" value="b"> Sistem saraf pusat</label><label><input type="radio" name="q5" value="c"> Sistem pernapasan</label></div><div id="fb5" class="feedback"></div></div>
+<div class="question"><div class="qtitle">6. Menarik tangan dengan cepat setelah menyentuh benda panas merupakan contoh ...</div><div class="options"><label><input type="radio" name="q6" value="a"> Gerak refleks</label><label><input type="radio" name="q6" value="b"> Gerak yang selalu direncanakan</label><label><input type="radio" name="q6" value="c"> Gerak sendi pelana</label></div><div id="fb6" class="feedback"></div></div>
+<div class="question"><div class="qtitle">7. Ketika otot bisep berkontraksi untuk menekuk siku, otot bekerja dengan cara ...</div><div class="options"><label><input type="radio" name="q7" value="a"> Mendorong tulang tanpa melekat</label><label><input type="radio" name="q7" value="b"> Menarik tulang melalui tendon</label><label><input type="radio" name="q7" value="c"> Mengubah tulang menjadi sendi</label></div><div id="fb7" class="feedback"></div></div>
+<div class="question"><div class="qtitle">8. Kebiasaan yang membantu menjaga kesehatan sistem gerak adalah ...</div><div class="options"><label><input type="radio" name="q8" value="a"> Duduk membungkuk sepanjang hari</label><label><input type="radio" name="q8" value="b"> Tidak pernah bergerak</label><label><input type="radio" name="q8" value="c"> Berolahraga sesuai kemampuan dan menjaga postur</label></div><div id="fb8" class="feedback"></div></div>
+<button class="action" type="button" onclick="gradeQuiz()">Periksa Kuis</button> <button class="action secondary" type="button" onclick="resetQuiz()">Ulangi Kuis</button>
+<div id="scoreBox" class="score hidden" aria-live="polite"></div>
+</form></div>
+</section>
+<section id="refleksi" class="page hidden">
+<div class="panel"><h2>💭 Refleksi Belajar</h2><p>Jawab dengan jujur. Tidak ada jawaban yang memalukan—refleksi membantumu mengetahui hal yang sudah dipahami dan yang perlu dipelajari lagi.</p>
+<label for="understand"><b>1. Seberapa paham kamu tentang kerja sama tulang, sendi, otot, dan saraf?</b></label><select id="understand"><option value="">Pilih jawaban</option><option>Saya sudah paham dan bisa menjelaskan.</option><option>Saya cukup paham, tetapi perlu latihan.</option><option>Saya masih perlu bantuan.</option></select>
+<label for="learned"><b>2. Tuliskan satu hal baru yang kamu pelajari.</b></label><textarea id="learned" placeholder="Contoh: Sendi siku termasuk sendi engsel..."></textarea>
+<label for="habit"><b>3. Satu kebiasaan sehat yang akan saya lakukan adalah ...</b></label><textarea id="habit" placeholder="Tuliskan tindakan nyata yang bisa kamu lakukan."></textarea>
+<button class="action" onclick="copyReflection()">📋 Salin refleksi</button><button class="action secondary" onclick="clearReflection()">Kosongkan jawaban</button>
+<div class="callout"><b>Ingat!</b> Mengenal tubuh membantu kita merawatnya. Bergeraklah dengan aman, makan bergizi, jaga postur, dan minta bantuan orang dewasa jika mengalami cedera atau nyeri.</div></div>
+</section>
+<div class="controls"><div class="left"><button onclick="goHome()">🏠 Home</button><button onclick="goRelative(-1)">← Kembali</button><button onclick="goRelative(1)" class="primary">Lanjut →</button></div><div class="right"><button onclick="repeatPage()">↻ Ulangi halaman</button><button onclick="copyCurrent()">📋 Salin materi/soal</button></div></div>
+<footer>Media belajar IPAS • Kelas VI SD • Gunakan dengan bimbingan guru.</footer>
+</main><div id="toast" class="toast" role="status">Berhasil disalin</div>
+<script>
+const pages=['materi','latihan','kuis','refleksi'];let current='materi';let selectedSort=null;
+document.querySelectorAll('.nav button').forEach(b=>b.addEventListener('click',()=>showPage(b.dataset.page)));
+function showPage(id){current=id;pages.forEach(p=>document.getElementById(p).classList.toggle('hidden',p!==id));document.querySelectorAll('.nav button').forEach(b=>b.classList.toggle('active',b.dataset.page===id));window.scrollTo({top:0,behavior:'smooth'})}
+function goHome(){showPage('materi')}function goRelative(n){showPage(pages[Math.max(0,Math.min(pages.length-1,pages.indexOf(current)+n))])}
+function repeatPage(){if(current==='kuis')resetQuiz();if(current==='latihan'){resetSort();document.getElementById('matchFeedback').textContent='';document.querySelectorAll('#matching select').forEach(s=>s.value='')}if(current==='refleksi')clearReflection();window.scrollTo({top:0,behavior:'smooth'});toast('Halaman siap diulangi')}
+function toast(msg){let t=document.getElementById('toast');t.textContent=msg;t.classList.remove('show');void t.offsetWidth;t.classList.add('show')}
+function copyText(t){if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(t).then(()=>toast('Berhasil disalin')).catch(()=>fallbackCopy(t))}else fallbackCopy(t)}
+function fallbackCopy(t){let a=document.createElement('textarea');a.value=t;document.body.appendChild(a);a.select();try{document.execCommand('copy');toast('Berhasil disalin')}catch(e){toast('Salin tidak tersedia di browser ini')}a.remove()}
+function copyCurrent(){let el=document.getElementById(current);let t=el.innerText;copyText(t)}
+const matches=[['Tulang','Menopang tubuh dan melindungi organ'],['Sendi','Menghubungkan tulang dan memungkinkan gerak'],['Otot','Berkontraksi dan menarik tulang'],['Sistem saraf','Mengirim pesan dan mengendalikan respons']];
+const opts=['Pilih fungsi…','Menopang tubuh dan melindungi organ','Menghubungkan tulang dan memungkinkan gerak','Berkontraksi dan menarik tulang','Mengirim pesan dan mengendalikan respons'];
+document.getElementById('matching').innerHTML=matches.map((m,i)=>`<div class="matchrow"><div class="term">${m[0]}</div><select data-match="${i}" aria-label="Fungsi ${m[0]}">${opts.map((o,j)=>`<option value="${j===0?'':o}">${o}</option>`).join('')}</select></div>`).join('');
+function checkMatching(){let n=0;matches.forEach((m,i)=>{let s=document.querySelector(`[data-match="${i}"]`);if(s.value===m[1])n++});let f=document.getElementById('matchFeedback');f.className='feedback '+(n===4?'correct':'incorrect');f.textContent=`Skor latihan mencocokkan: ${n}/4. `+(n===4?'Hebat, semua pasangan tepat!':'Periksa kembali pasangan yang belum tepat, lalu coba lagi.')}
+function sortItems(){return [...document.querySelectorAll('.sortitem')]}
+function initSort(){let list=document.getElementById('sortlist');let drag=null;sortItems().forEach(el=>{el.addEventListener('dragstart',e=>{drag=el;el.classList.add('dragging');e.dataTransfer.effectAllowed='move'});el.addEventListener('dragend',()=>{el.classList.remove('dragging');drag=null});el.addEventListener('dragover',e=>{e.preventDefault();if(drag&&drag!==el){let r=el.getBoundingClientRect();list.insertBefore(drag,e.clientY<r.top+r.height/2?el:el.nextSibling)}});el.addEventListener('click',()=>{sortItems().forEach(x=>x.style.outline='');selectedSort=el;el.style.outline='3px solid #3778c2'});el.addEventListener('keydown',e=>{if(e.key==='ArrowUp'||e.key==='ArrowDown'){e.preventDefault();selectedSort=el;moveSort(e.key==='ArrowUp'?-1:1)}})})}
+function moveSort(dir){let list=document.getElementById('sortlist');if(!selectedSort){selectedSort=sortItems()[0]}let items=sortItems(),i=items.indexOf(selectedSort),j=i+dir;if(j<0||j>=items.length)return;if(dir<0)list.insertBefore(selectedSort,items[j]);else list.insertBefore(items[j],selectedSort);sortItems().forEach(x=>x.style.outline='');selectedSort.style.outline='3px solid #3778c2'}
+function checkSort(){let good=sortItems().every((el,i)=>Number(el.dataset.order)===i+1);let f=document.getElementById('sortFeedback');f.className='feedback '+(good?'correct':'incorrect');f.textContent=good?'Tepat! Urutan proses gerak sudah benar.':'Belum tepat. Ingat urutannya: pesan saraf → otot merespons → otot menarik tulang → gerak terjadi pada sendi.'}
+function resetSort(){let list=document.getElementById('sortlist');sortItems().sort((a,b)=>Number(a.dataset.order)-Number(b.dataset.order)).forEach(x=>list.appendChild(x));selectedSort=null;sortItems().forEach(x=>x.style.outline='');document.getElementById('sortFeedback').textContent=''}
+initSort();
+const answers={1:'b',2:'a',3:'c',4:'a',5:'b',6:'a',7:'b',8:'c'};
+const explanations={1:'Tulang rusuk membentuk rongga dada dan membantu melindungi jantung serta paru-paru.',2:'Sendi engsel memungkinkan gerak terutama menekuk dan meluruskan, seperti pada siku.',3:'Otot jantung berkontraksi secara teratur untuk memompa darah.',4:'Otot merupakan alat gerak aktif karena kontraksinya dapat menarik tulang.',5:'Otak dan sumsum tulang belakang adalah bagian sistem saraf pusat.',6:'Gerak refleks merupakan respons cepat yang berlangsung melalui jalur saraf refleks.',7:'Otot melekat pada tulang melalui tendon dan menghasilkan gerak dengan menarik tulang.',8:'Aktivitas fisik sesuai kemampuan dan postur yang baik membantu menjaga kesehatan sistem gerak.'};
+function gradeQuiz(){let score=0;for(let i=1;i<=8;i++){let chosen=document.querySelector(`input[name="q${i}"]:checked`);let fb=document.getElementById('fb'+i);if(chosen&&chosen.value===answers[i]){score++;fb.className='feedback correct';fb.textContent='Benar! '+explanations[i]}else{fb.className='feedback incorrect';fb.textContent='Kunci: '+({1:'B',2:'A',3:'C',4:'A',5:'B',6:'A',7:'B',8:'C'}[i])+'. '+explanations[i]}}let box=document.getElementById('scoreBox');box.classList.remove('hidden');box.textContent=`Skor kamu: ${score}/8 (${Math.round(score/8*100)}%). `+(score===8?'Luar biasa!':score>=6?'Bagus! Pelajari kembali soal yang belum tepat.':'Terus berlatih. Baca pembahasan lalu ulangi kuis.');box.scrollIntoView({behavior:'smooth',block:'center'})}
+function resetQuiz(){document.getElementById('quizForm').reset();for(let i=1;i<=8;i++){let f=document.getElementById('fb'+i);f.textContent='';f.className='feedback'}document.getElementById('scoreBox').classList.add('hidden')}
+function copyReflection(){let t='REFLEKSI IPAS KELAS VI\\nPemahaman: '+(document.getElementById('understand').value||'Belum diisi')+'\\nHal baru yang dipelajari: '+(document.getElementById('learned').value||'Belum diisi')+'\\nKebiasaan sehat yang akan dilakukan: '+(document.getElementById('habit').value||'Belum diisi');copyText(t)}
+function clearReflection(){document.getElementById('understand').value='';document.getElementById('learned').value='';document.getElementById('habit').value='';toast('Jawaban refleksi dikosongkan')}
+</script></body></html>
